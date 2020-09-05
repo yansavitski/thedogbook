@@ -1,5 +1,19 @@
+@import 'src/global.scss';
+
 body {
+  background: $bgColor;
+  color: $textColor;
+  font-family: -apple-system, 'Helvetica', 'Arial', sans-serif;
+}
+
+.App {
   display: flex;
-  height: 17px;
-  width: 17px;
+  flex-direction: column;
+  margin: $baseOffset * 2;
+
+  &-title {
+    color: $textColorInverse;
+    text-align: center;
+    text-shadow: 0 0 15px $shadowColorInverse;
+  }
 }

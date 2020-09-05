@@ -1,5 +1,9 @@
 import { combineReducers } from 'redux'
 
-export const rootReducer = combineReducers({})
+import { breedsReducer } from './breeds/reducers'
+
+export const rootReducer = combineReducers({
+  breeds: breedsReducer,
+})
 
 export type AppState = ReturnType<typeof rootReducer>
