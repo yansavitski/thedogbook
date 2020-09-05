@@ -1,0 +1,18 @@
+/* colors */
+$bgColor: #141414;
+$textColor: #fff;
+$textColorInverse: #000;
+$borderColor: #a0a0a0;
+$borderColorHover: #e2e2e2;
+$shadowColor: #141414;
+$shadowColorInverse: #d9d9d9;
+$buttonColor: transparent;
+
+/* sizes */
+$baseOffset: 10px;
+$borderRadius: 4px;
+
+/* mixins */
+@mixin transition($name, $time: 300ms, $function: ease-in) {
+  transition: $name $time $function;
+}

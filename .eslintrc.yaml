@@ -1,0 +1,33 @@
+env:
+  browser: true
+  es6: true
+  node: true
+extends:
+  - '@ridedott/eslint-config'
+  - 'plugin:react/recommended'
+overrides:
+  - files:
+      - ./src/**/*spec.ts
+      - ./src/**/*spec.tsx
+    rules:
+      '@typescript-eslint/no-magic-numbers': 'off'
+      'unicorn/prevent-abbreviations': 'off'
+parserOptions:
+  ecmaVersion: 10
+  project: tsconfig.json
+  sourceType: module
+rules:
+  immutable/no-mutation: 'off'
+  immutable/no-this: 'off'
+  immutable/no-let: 'off'
+  '@typescript-eslint/explicit-function-return-type':
+    - error
+    - allowTypedFunctionExpressions: true
+  '@typescript-eslint/no-implicit-any-catch': 'off'
+  '@typescript-eslint/init-declarations': 'off'
+  unicorn/filename-case:
+    - error
+    - cases:
+        camelCase: true
+        pascalCase: true
+  unicorn/consistent-function-scoping: 'off'
