@@ -1,0 +1,15 @@
+@import 'src/global';
+
+.UploadForm {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+
+  &-input {
+    display: none;
+  }
+
+  &-icon {
+    margin-right: $baseOffset/2;
+  }
+}

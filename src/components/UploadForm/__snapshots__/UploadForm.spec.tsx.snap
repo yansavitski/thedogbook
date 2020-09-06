@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UploadForm /> renders correctly 1`] = `
+<form
+  className="UploadForm"
+>
+  <input
+    accept="image/*"
+    className="UploadForm-input"
+    disabled={false}
+    name="fileToUpload"
+    onChange={[Function]}
+    type="file"
+  />
+  <Component
+    className="UploadForm-button"
+    disabled={false}
+    onClick={[Function]}
+  >
+    <FiUpload
+      className="UploadForm-icon"
+      size={24}
+      title="Upload image"
+    />
+    Upload Image
+  </Component>
+</form>
+`;
+
+exports[`<UploadForm /> renders correctly with optional props 1`] = `
+<form
+  className="UploadForm preview"
+>
+  <input
+    accept="image/*"
+    className="UploadForm-input"
+    disabled={true}
+    name="fileToUpload"
+    onChange={[Function]}
+    type="file"
+  />
+  <Component
+    className="UploadForm-button"
+    disabled={true}
+    onClick={[Function]}
+  >
+    <FiUpload
+      className="UploadForm-icon"
+      size={24}
+      title="Upload image"
+    />
+    Upload Image
+  </Component>
+</form>
+`;

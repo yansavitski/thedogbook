@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ClassifyImageForm /> renders correctly 1`] = `<Memo() />`;
+
+exports[`<ClassifyImageForm /> renders correctly with optional props 1`] = `
+<Memo()
+  className="customClassWrapper"
+  disabled={true}
+/>
+`;

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Loading /> renders correctly 1`] = `
+<div
+  className="Loading customLoader"
+>
+  <AiOutlineLoading3Quarters
+    className="Loading-spinner"
+    size={32}
+  />
+</div>
+`;

@@ -1,0 +1,15 @@
+@import 'src/global';
+
+.ClassifyImageForm {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  &-insertForm {
+    margin-top: $baseOffset;
+  }
+
+  &-preview {
+    margin-top: $baseOffset * 2;
+  }
+}

@@ -1,0 +1,35 @@
+@import 'src/global';
+
+.InsertUrlForm {
+  display: flex;
+
+  &-input {
+    background: transparent;
+    border: 0;
+    color: $textColor;
+    padding: 0;
+    width: 0;
+
+    @include transition(width);
+
+    &:focus {
+      outline: none;
+    }
+
+    &_show {
+      border: 1px solid $borderColor;
+      border-bottom-left-radius: $borderRadius;
+      border-right: none;
+      border-top-left-radius: $borderRadius;
+      padding: $baseOffset/2;
+      width: 200px;
+    }
+  }
+
+  &-submitButton {
+    &#{&}_show {
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+    }
+  }
+}

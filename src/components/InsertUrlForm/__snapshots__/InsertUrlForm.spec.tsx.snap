@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InsertUrlForm /> renders correctly 1`] = `
+<form
+  className="InsertUrlForm"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  <input
+    className="InsertUrlForm-input"
+    disabled={false}
+    onChange={[Function]}
+    placeholder="Please insert url to image"
+    type="text"
+    value=""
+  />
+  <Component
+    className=""
+    onClick={[Function]}
+  >
+    Insert URL to image
+  </Component>
+</form>
+`;
+
+exports[`<InsertUrlForm /> renders correctly with optional props 1`] = `
+<form
+  className="InsertUrlForm customClassWrapper"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  <input
+    className="InsertUrlForm-input"
+    disabled={true}
+    onChange={[Function]}
+    placeholder="Please insert url to image"
+    type="text"
+    value=""
+  />
+  <Component
+    className=""
+    onClick={[Function]}
+  >
+    Insert URL to image
+  </Component>
+</form>
+`;

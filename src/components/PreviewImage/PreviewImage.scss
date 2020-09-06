@@ -1,0 +1,25 @@
+@import 'src/global';
+
+.PreviewImage {
+  border-radius: $borderRadius;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  width: 500px;
+
+  &-image {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  &-caption {
+    background: rgb(0 0 0 / 40%);
+    bottom: 0;
+    color: #fff;
+    left: 0;
+    padding: $baseOffset/2;
+    position: absolute;
+    right: 0;
+  }
+}

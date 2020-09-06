@@ -1,0 +1,26 @@
+@import 'src/global';
+
+.Button {
+  align-items: center;
+  background: $buttonColor;
+  border: 1px solid $borderColor;
+  border-radius: $borderRadius;
+  color: $textColor;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  padding: 10px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    border: 1px solid $borderColorHover;
+  }
+
+  &_disabled {
+    opacity: 0.6;
+    pointer-events: none;
+  }
+}

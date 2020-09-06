@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> renders correctly 1`] = `
+<button
+  className="Button"
+  type="button"
+>
+  button text
+</button>
+`;
+
+exports[`<Button /> renders correctly with optional props 1`] = `
+<button
+  className="Button btn-text Button_disabled"
+  disabled={true}
+  type="submit"
+>
+  button text
+</button>
+`;

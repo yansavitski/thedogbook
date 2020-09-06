@@ -1,0 +1,17 @@
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Loading {
+  text-align: center;
+  width: 100%;
+
+  &-spinner {
+    animation: rotateAnimation 1.3s ease-out infinite;
+  }
+}
