@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Gallery /> renders correctly 1`] = `
+<section
+  className="Gallery wrapperGalleryClass"
+>
+  <span>
+    text
+  </span>
+</section>
+`;

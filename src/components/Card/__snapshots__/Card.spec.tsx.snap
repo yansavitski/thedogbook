@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card /> renders correctly 1`] = `
+<figure
+  className="Card"
+>
+  <img
+    alt="card"
+    className="Card-image"
+    loading="lazy"
+    src="url to card"
+  />
+</figure>
+`;

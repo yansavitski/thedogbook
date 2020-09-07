@@ -1,0 +1,8 @@
+@import 'src/global';
+
+.Gallery {
+  display: grid;
+  grid-gap: $baseOffset/2;
+  grid-template-columns: repeat(auto-fit, 200px);
+  justify-content: center;
+}

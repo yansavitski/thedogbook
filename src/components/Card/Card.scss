@@ -1,0 +1,23 @@
+@import 'src/global';
+
+.Card {
+  border-radius: $borderRadius;
+  box-shadow: 0 0 2px $shadowColor;
+  height: 100%;
+  min-height: 200px;
+  overflow: hidden;
+  width: 100%;
+
+  @include transition(transform, 150ms);
+
+  &:hover {
+    box-shadow: 0 0 7px 5px $shadowColor;
+    transform: scale(1.1);
+  }
+
+  &-image {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+}
