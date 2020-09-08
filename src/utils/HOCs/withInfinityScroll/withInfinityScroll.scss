@@ -1,0 +1,16 @@
+.WithInfinityScroll {
+  &-loading,
+  &-error,
+  &-end {
+    margin-top: 20px;
+  }
+
+  &-end,
+  &-error {
+    text-align: center;
+  }
+
+  &-error {
+    color: #d03838;
+  }
+}
