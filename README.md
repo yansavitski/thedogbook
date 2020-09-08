@@ -1,8 +1,11 @@
 # The dogbook
 
-## Available scripts
+The dogbook is web app where users can upload a picture of a dog and see a
+gallery of pictures of dogs of the same breed.
 
-To start the project, simply run:
+### Available scripts
+
+To start the project, use:
 
 ```bash
 npm run start
