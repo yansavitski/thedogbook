@@ -1,6 +1,5 @@
 const { join } = require('path')
 
-const autoPrefixer = require('autoprefixer')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const webpack = require('webpack')
@@ -26,9 +25,6 @@ const configuration = {
     rules: [
       {
         loader: 'html-loader',
-        options: {
-          attrs: ['img:src', 'link:href'],
-        },
         test: /\.html$/u,
       },
       {
@@ -49,12 +45,16 @@ const configuration = {
         test: /\.s?css$/i,
         use: [
           'style-loader',
-          'css-loader',
+          {
+            loader: 'css-loader',
+            options: { importLoaders: 1 },
+          },
           {
             loader: 'postcss-loader',
             options: {
-              plugins: () => [autoPrefixer()],
-              sourceMap: true,
+              postcssOptions: {
+                plugins: ['autoprefixer'],
+              },
             },
           },
           'sass-loader',
